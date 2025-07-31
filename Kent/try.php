@@ -1,27 +1,26 @@
 <?php
-$age = 100;
-if ($age < 12) {
-    echo "
-    █▀▀ █░█ █ █░░ █▀▄<br>
-█▄▄ █▀█ █ █▄▄ █▄▀<br>
-    ";
+
+$age = 21;
+$gender = "Female";
+
+if ($gender == "Female"){
+    if($age >= 18){
+        echo "You are a Female Debutant!";
+    }
+    else{
+        echo "You are not Debutant!";
+    }
 }
-elseif ($age < 18){
-    echo "
-    ▀█▀ █▀▀ █▀▀ █▄░█ ▄▀█ █▀▀ █▀▀ █▀█<br>
-░█░ ██▄ ██▄ █░▀█ █▀█ █▄█ ██▄ █▀▄<br>
-    ";
+elseif ($gender == "Male"){
+    if($age >= 21){
+        echo "You are a Male Debutant!";
+    }
+    else{
+        echo "You are not Debutant!";
+    }
 }
-elseif ($age < 60){
-    echo "
-    ▄▀█ █▀▄ █░█ █░░ ▀█▀<br>
-█▀█ █▄▀ █▄█ █▄▄ ░█░<br>
-    ";
+else{
+    echo "Error";
 }
-else {
-    echo "
-█▀ █▀▀ █▄░█ █ █▀█ █▀█   █▀▀ █ ▀█▀ █ ▀█ █▀▀ █▄░█<br>
-▄█ ██▄ █░▀█ █ █▄█ █▀▄   █▄▄ █ ░█░ █ █▄ ██▄ █░▀█
-    ";
-}
+
 ?>
