@@ -29,7 +29,6 @@
                 $tax = $grossPay * 0.02;
                 $SSS = $grossPay * 0.015;
                 $pagibig = 50;
-                $cash_advance = 200;
                 $total_deduction = $tax + $SSS + $pagibig + $cash_advance;
                 $netPay = $grossPay - $total_deduction;
             }
@@ -50,7 +49,7 @@
                 <li class="list-group-item"><strong>Cash Advance: </strong>₱<?=number_format($cash_advance, 2); ?></li>
                 <hr>
                 <li class="list-group-item"><strong>Total Deductions:</strong> ₱<?=number_format($total_deduction, 2);?> </li>
-                <li class="list-group-item text-success"><strong>Net Pay: ₱<?=number_format($netPay, 2);?></strong></li>
+                <li class="list-group-item list-group-item-success text-success"><strong>Net Pay: ₱<?=number_format($netPay, 2);?></strong></li>
             </ul>
             <hr>
             <div class="mt-4 text-center">
